@@ -22,8 +22,6 @@
   cursor: pointer;
 }
 
-/* ONE */
-
 #hamburger-1.is-active .line:nth-child(1){
   transform: translateY(4px) rotate(45deg);
 }
@@ -31,7 +29,6 @@
 #hamburger-1.is-active .line:nth-child(2){
   transform: translateY(-4px) rotate(-45deg);
 }
-
 
 .socials {
 	position: absolute;
@@ -133,7 +130,6 @@
 	font-style: italic;
 }
 
-//h-container
 .h-container {
   padding: 0 20px;
 }
