@@ -1,0 +1,10 @@
+<app-location-list
+  *ngIf="data$ | async as data; else loading"
+  [data]="data.data"
+  [searchData]="data.params"
+  (searchDataChange)="doSearchDataChange($event)"
+></app-location-list>
+
+<ng-template #loading>
+  <h3 class="loading">Loading. . .</h3>
+</ng-template>

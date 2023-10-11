@@ -1,0 +1,35 @@
+<div class="container content-list">
+  <div class="content">
+    <div class="list-header">
+      <div>Search</div>
+      <h1>Episode</h1>
+    </div>
+    <form class="form" [formGroup]="formGroup" (ngSubmit)="doSearchDataChange()">
+      <div class="paginate">
+        <button type="button" (click)="doPageChange(data.info.prev)">
+          👈🏻
+        </button>
+        <span
+          >{{
+            formGroup.controls.page.value ? formGroup.controls.page.value : '1'
+          }}
+          / {{ pages }}</span
+        >
+        <button type="button" (click)="doPageChange(data.info.next)">
+          👉🏻
+        </button>
+
+      </div>
+      <input class="search-bar" type="text" formControlName="name" placeholder="Find your character">
+      <ng-template #notFound><h3>NotFound ! ! !</h3></ng-template>
+    </form>
+
+    <ul class="data-list-box">
+      <li class="data-lists" *ngFor="let item of data.results">
+        <a class="data-list" [routerLink]="getId(item.url)">{{ item.name }}</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+

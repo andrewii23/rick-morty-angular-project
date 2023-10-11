@@ -1,0 +1,45 @@
+@import url(../../../app.component.scss);
+
+.ct-lists{
+  display: grid;
+ grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+ gap: 5rem;
+}
+
+.ct-list {
+  list-style: none;
+}
+
+.ct {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  text-decoration: none;
+  color: #000;
+}
+
+.ct-img {
+  border-radius: 40px;
+}
+
+.ct-desc {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 28px;
+}
+
+.ct-name {
+  font-weight: bolder;
+}
+
+.not-found {
+  position: fixed;
+  top: 50%;
+  right: 50%;
+  background-color: red;
+  z-index: 99999;
+}
+
+

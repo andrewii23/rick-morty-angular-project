@@ -1,0 +1,174 @@
+.cb-btn {
+  display: inline
+}
+
+.cb-btn_cta {
+  position: relative;
+  display: inline-block;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  background: 0 0;
+  border: 0;
+  border-radius: 0;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+  text-align: inherit;
+  text-transform: inherit;
+  text-indent: inherit;
+  text-decoration: none
+}
+
+.cb-btn_cta:focus, .cb-btn_cta:hover {
+  text-decoration: none
+}
+
+.cb-btn_cta {
+  overflow: hidden;
+  padding: 1.4rem 2rem;
+  transform: translateZ(0);
+  border-radius: 1000px;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 110%;
+  text-transform: uppercase;
+  transition: transform .3s
+}
+
+.cb-btn_cta-border {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 1px;
+  z-index: 3;
+  border: 1px solid;
+  border-radius: 1000px
+}
+
+.cb-btn_cta-ripple {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  overflow: hidden;
+  transform: translateZ(0);
+  border-radius: inherit
+}
+
+.cb-btn_cta-ripple span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transform: translateY(101%);
+  background: currentColor;
+  border-radius: 50% 50% 0 0;
+  transition: transform .5s cubic-bezier(.4, 0, 0, 1), border-radius .5s cubic-bezier(.4, 0, 0, 1)
+}
+
+@media (pointer:fine) {
+  .cb-btn_cta:hover .cb-btn_cta-ripple span {
+      border-radius: 0;
+      transform: translateY(0);
+      transition-duration: .5s, .9s
+  }
+}
+
+.cb-btn_cta-title {
+  position: relative;
+  display: block;
+  padding: 0 .16em 0 0;
+  overflow: hidden;
+  z-index: 2
+}
+
+.cb-btn_cta-title span {
+  display: block;
+  transition: transform .8s cubic-bezier(.16, 1, .3, 1)
+}
+
+.cb-btn_cta-title span:after {
+  content: attr(data-text);
+  display: block;
+  position: absolute;
+  top: 110%;
+  left: 0;
+  color: #fff
+}
+
+.cb-btn_cta.-inverse .cb-btn_cta-title span:after,
+.cb-btn_cta.-tertiary .cb-btn_cta-title span:after {
+  color: #000
+}
+
+@media (pointer:fine) {
+  .cb-btn_cta:hover .cb-btn_cta-title span {
+      transform: translateY(-110%)
+  }
+}
+
+.cb-btn_cta.-sm {
+  padding: .5rem 1.4rem;
+  font-size: 1.7rem
+}
+
+@media (min-width:768px),
+(orientation:landscape) {
+  .cb-btn_cta.-sm {
+      padding: .8rem 1.5rem;
+      font-size: 1.8rem
+  }
+}
+
+.cb-btn_cta.-md {
+  font-size: 2.2rem
+}
+
+@media (min-width:768px) {
+  .cb-btn_cta.-md {
+      font-size: 2.8rem
+  }
+}
+
+.cb-btn_cta.-xl {
+  padding: 0 1.9rem;
+  font-weight: 400;
+  font-size: 6.9rem
+}
+
+@media (min-width:768px) {
+  .cb-btn_cta.-xl {
+      padding: 0 3.4rem;
+      font-size: 13rem
+  }
+}
+
+.cb-btn_cta.-xxl {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 14rem;
+  font-weight: 500;
+  font-size: 2rem;
+  text-transform: none
+}
+
+@media (min-width:768px) {
+  .cb-btn_cta.-xxl {
+      display: inline-flex;
+      height: 22rem;
+      width: auto;
+      padding: 0 14.5rem;
+      font-size: 3.2rem
+  }
+}

@@ -1,0 +1,154 @@
+@import url(/src/assets/css/cb-btn.css);
+
+@font-face {
+  font-family: matter-regular;
+  src: url(./assets/fonts/matter/matter-regular.woff2);
+}
+@font-face {
+  font-family: matter-light;
+  src: url(./assets/fonts/matter/matter-light.woff2);
+}
+@font-face {
+  font-family: roboto-flex;
+  src: url(./assets/fonts/roboto-flex/roboto-flex-variable-full.woff2);
+}
+
+:root {
+  font-family: matter-regular;
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: matter-regular;
+}
+
+::selection {
+  color: #fff;
+  background: #ABD5EB;
+}
+
+.roboto {
+  font-family: roboto-flex;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.matter-light {
+  font-family: matter-light;
+}
+
+.content {
+  padding-top: clamp(4.6875rem, 3.5917rem + 4.8701vw, 9.375rem);
+  padding-bottom: clamp(4.6875rem, 3.5917rem + 4.8701vw, 9.375rem);
+}
+.list-header {
+  margin-bottom: 3rem;
+}
+.list-header div{
+  font-size: 24px;
+  margin-bottom: 1.5rem;
+}
+
+.list-header h1 {
+  font-size: clamp(3.75rem, 3.5747rem + 0.7792vw, 4.5rem);
+  font-weight: 400;
+}
+
+.paginate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-size: clamp(2rem, 1.7662rem + 1.039vw, 3rem);
+  margin-bottom: 3rem;
+}
+
+.paginate button {
+  background: none;
+  outline: none;
+  border: none;
+  font-size: clamp(3rem, 2.8247rem + 0.7792vw, 3.75rem);
+  cursor: pointer;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: clamp(2rem, 1.7662rem + 1.039vw, 3rem);
+}
+
+.search-bar {
+  outline: none;
+  border: none;
+  background: none;
+  font-size: clamp(1.5rem, 1.3831rem + 0.5195vw, 2rem);
+  font-weight: 400;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #BABBBB;
+  transition: all .3s ease;
+  max-width: 100%;
+}
+
+.search-bar:focus {
+  border-bottom: 1px solid #000;
+}
+
+::placeholder {
+  color: #BABBBB;
+  font-weight: 400;
+}
+
+.loading {
+  position: absolute;
+  left: 2rem;
+  bottom: 2rem;
+}
+
+.data-list-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.data-lists {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  font-size: clamp(1.125rem, 0.8036rem + 1.4286vw, 2.5rem);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.data-list {
+  color: #000;
+  text-decoration: none;
+}
+
+.data-lists:hover {
+  transform: translateX(10px);
+  opacity: 0.5;
+}
+
+
+
+::-webkit-scrollbar {
+  background-color: #fff;
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #2b2b2b;
+  border-radius: 16px;
+  border: 2px solid #fff;
+}
+
+::-webkit-scrollbar-button {
+  display:none;
+}

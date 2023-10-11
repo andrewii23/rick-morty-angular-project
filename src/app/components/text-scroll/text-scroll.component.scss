@@ -1,0 +1,26 @@
+.text-scroll {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+
+
+.slider {
+  position: relative;
+  white-space: nowrap;
+}
+
+.slider p {
+  position: relative;
+  margin: 0px;
+  color: #000;
+  font-size: clamp(6.25rem, 4.0584rem + 9.7403vw, 15.625rem);
+  font-weight: 500;
+  padding-right: 50px;
+}
+
+.slider p:nth-of-type(2) {
+  position: absolute;
+  left: 100%;
+  top: 0;
+}

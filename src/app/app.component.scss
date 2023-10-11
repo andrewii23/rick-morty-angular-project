@@ -1,0 +1,55 @@
+//Container
+.container {
+  padding: 0 20px;
+}
+
+@media (min-width: 360px) {
+  .container {
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 100px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding: 0 120px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    padding: 0 150px;
+  }
+}
+
+@media (min-width: 1350px) {
+  .container {
+    padding: 0 180px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .container {
+    padding: 0 220px;
+  }
+}
+
+
+
+app-spinner {
+  position: fixed;
+  z-index: 1000;
+  right: -50px;
+  bottom: -50px;
+  scale: 0.55;
+}
+app-menu {
+  width: 100%;
+  position: fixed;
+  z-index: 1001;
+}

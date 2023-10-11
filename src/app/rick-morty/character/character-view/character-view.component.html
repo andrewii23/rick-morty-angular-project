@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="content">
+    <div class="ct-view">
+      <img class="ct-view-img" src="{{ data.image }}" alt="" />
+
+      <div class="ct-data">
+        <div class="ct-name">{{ data.name }}</div>
+
+        <div class="ct-view-data">
+          <div class="ct-view-data-head">Gender</div>
+          <div class="ct-view-data-desc">{{ data.gender }}</div>
+        </div>
+        <div class="ct-view-data">
+          <div class="ct-view-data-head">Species</div>
+          <div class="ct-view-data-desc">{{ data.species }}</div>
+        </div>
+        <div class="ct-view-data">
+          <div class="ct-view-data-head">Status</div>
+          <div class="ct-view-data-desc">{{ data.status }}</div>
+        </div>
+        <div class="ct-view-data">
+          <div class="ct-view-data-head">Location</div>
+          <div class="ct-view-data-desc">{{ data.location.name }}</div>
+        </div>
+        <div class="ct-view-data">
+          <div class="ct-view-data-head">Last known location</div>
+          <div class="ct-view-data-desc">{{ data.origin.name }}</div>
+        </div>
+      </div>
+
+
+    </div>
+
+  </div>
+
+</div>

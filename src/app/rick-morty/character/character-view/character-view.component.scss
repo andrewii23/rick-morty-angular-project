@@ -1,0 +1,31 @@
+@import url(../../../app.component.scss);
+
+.ct-view {
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ct-view-img {
+  width: 100%;
+  border-radius: 24px;
+}
+
+.ct-name {
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.ct-data {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+.ct-view-data-desc {
+  font-size: 1.5rem;
+}

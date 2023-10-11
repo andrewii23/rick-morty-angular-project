@@ -1,0 +1,10 @@
+<app-episode-list
+  *ngIf="data$ | async as data; else loading"
+  [data]="data.data"
+  [searchData]="data.params"
+  (searchDataChange)="doSearchDataChange($event)"
+></app-episode-list>
+
+<ng-template #loading>
+  <h3 class="loading">Loading. . .</h3>
+</ng-template>
