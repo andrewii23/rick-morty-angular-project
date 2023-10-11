@@ -25,7 +25,7 @@
 
 .wide {
   margin-left: -2rem;
-  padding:0 2rem;
+  padding: 0 2rem;
 }
 
 .hero-content-line img {
@@ -36,23 +36,16 @@
 .video {
   width: 100%;
 }
-/* Hide the default play button */
 .video::-webkit-media-controls-start-playback-button {
   display: none !important;
 }
-
-/* Hide the default stop button */
 .video::-webkit-media-controls-enclosure {
   display: none !important;
 }
-
-/* For Firefox */
 .video::-moz-media-controls-play-button,
 .video::-moz-media-controls-stop-button {
   display: none !important;
 }
-
-/* For Edge */
 .video::-ms-media-controls-start-playback-button,
 .video::-ms-media-controls-stop-button {
   display: none !important;
@@ -80,141 +73,5 @@
 .info a {
   font-size: clamp(1.25rem, 1.1039rem + 0.6494vw, 1.875rem);
   padding: 6rem 10rem;
-}
-
-.feature,.member {
-  background-color: #000;
-  color: #fff;
-}
-
-.feature-title {
-  display: flex;
-  gap: clamp(0.5rem, 0.1494rem + 1.5584vw, 2rem);
-}
-
-.feature-title span {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.feature-title  span h1 {
-  font-size: clamp(2.5rem, 1.039rem + 6.4935vw, 8.75rem);
-  font-weight: 400;
-}
-.white {
-  color: #fff;
-}
-
-.feature-box {
-  display: flex;
-  flex-direction: column;
-  gap: 4rem;
-  width: 100%;
-  margin-top: 100px;
-}
-
-.feature-list {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  width: 100%;
-  text-decoration: none;
-  color: #fff;
-  transition: all .3s ease;
-
-}
-
-
-.feature-card {
-  overflow: hidden;
-  border-radius: 50px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.feature-card:hover img {
-  transform: scale(1.05);
-
-}
-
-.feature-list:hover .feature-name {
-  margin-left: 1rem;
-
-}
-.feature-card img {
-  transition: all .5s ease;
-  object-fit: cover;
-  width: 100%;
-}
-
-.feature-name {
-  margin-top: 1rem;
-  font-size: clamp(1.25rem, 1.0747rem + 0.7792vw, 2rem);
-  transition: all .3s ease;
-}
-
-.member-title {
-  font-size: 20px;
-  padding: 3rem;
-  border-bottom: 1px solid #2E2E2F;
-}
-
-.member-list {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 3rem;
-  border-bottom: 1px solid #2E2E2F;
-  font-size: clamp(1.125rem, 0.8036rem + 1.4286vw, 2.5rem);
-  cursor: pointer;
-  transition: all 0.2s;
-}
-
-.member-list .member-list-name,.member-list .member-list-task {
-  transition: all 0.2s;
-}
-
-.member-list:hover .member-list-name {
-  transform: translateX(10px);
-  opacity: 0.5;
-}
-.member-list:hover .member-list-task {
-  transform: translateX(-10px);
-  opacity: 0.5;
-}
-
-/* Blob */
-.blob-box {
-  background: url(../../../../assets/images/index/wallpaper1.png);
-  background-size: cover;
-  background-position: center center;
-  height: clamp(18.75rem, 15.8279rem + 12.987vw, 31.25rem);
-  width: clamp(18.75rem, 15.8279rem + 12.987vw, 31.25rem);
-  animation: animateBlob 8s ease-in-out infinite;
-  transition: all 1s ease-in-out;
-  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-}
-
-@keyframes animateBlob {
-  0% {
-      border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-  }
-
-  50% {
-      border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
-  }
-
-  100% {
-      border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-  }
-}
-
-@media (min-width: 1200px) {
-  .two-side {
-    grid-template-columns: 1fr 1fr;
-  }
 }
 
