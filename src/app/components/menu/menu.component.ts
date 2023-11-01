@@ -1,7 +1,19 @@
-import { AfterViewInit, Component, ElementRef, OnDestroy, OnInit, ViewChild } from '@angular/core';
+import {
+  AfterViewInit,
+  Component,
+  ElementRef,
+  OnDestroy,
+  OnInit,
+  ViewChild,
+} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import gsap from 'gsap';
-import { NavigationStart, Router, RouterLink, RouterLinkActive } from '@angular/router';
+import {
+  NavigationStart,
+  Router,
+  RouterLink,
+  RouterLinkActive,
+} from '@angular/router';
 import { Subscription } from 'rxjs';
 
 @Component({
@@ -9,7 +21,7 @@ import { Subscription } from 'rxjs';
   standalone: true,
   imports: [CommonModule, RouterLink, RouterLinkActive],
   templateUrl: './menu.component.html',
-  styleUrls: ['./menu.component.scss']
+  styleUrls: ['./menu.component.scss'],
 })
 export class MenuComponent implements OnInit, AfterViewInit, OnDestroy {
   @ViewChild('hamburger', { static: true }) hamburger!: ElementRef;
@@ -30,19 +42,16 @@ export class MenuComponent implements OnInit, AfterViewInit, OnDestroy {
   ngOnInit() {
     this.tl = gsap.timeline({ paused: true });
 
-    this.tl.to(".nav-container", { duration: 1, top: 0, ease: "expo.inOut" });
+    this.tl.to('.nav-container', { duration: 1, top: 0, ease: 'expo.inOut' });
 
-    this.tl.from(
-      ".menu > div",
-      {
-        duration: 0.8,
-        y: 100,
-        opacity: 0,
-        ease: "expo.out",
-        stagger: 0.1,
-        delay: -0.4,
-      }
-    );
+    this.tl.from('.menu > div', {
+      duration: 0.8,
+      y: 100,
+      opacity: 0,
+      ease: 'expo.out',
+      stagger: 0.1,
+      delay: -0.4,
+    });
 
     this.tl.reverse();
   }

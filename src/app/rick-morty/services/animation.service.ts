@@ -105,9 +105,9 @@ export class AnimationService {
     gsap.from(document.querySelectorAll('.feature-card'), {
       scrollTrigger: {
         trigger: document.querySelectorAll('.feature-card'),
-        start: 'center bottom',
+        start: '-75%',
+        end: 'center',
       },
-      duration: 1,
       y: 80,
       opacity: 0,
       stagger: 0.8,
@@ -116,8 +116,9 @@ export class AnimationService {
 
     gsap.from(document.querySelector('.two-side'), {
       scrollTrigger: {
-        trigger: document.querySelectorAll('.video'),
-        start: '50% 50%',
+        trigger: document.querySelectorAll('.two-side'),
+        start: 'top center',
+        end: 'center top',
       },
       duration: 1,
       y: 50,
